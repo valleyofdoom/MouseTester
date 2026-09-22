@@ -75,7 +75,7 @@ namespace MouseTester
                         {
                             this.Add(new MouseEvent(ushort.Parse(values[3]), int.Parse(values[0]), int.Parse(values[1]), double.Parse(array[2], System.Globalization.CultureInfo.InvariantCulture)));
                         }
-                        else if (values.Length == 3)
+                        else if (values.Length >= 3)
                         {
                             this.Add(new MouseEvent(0, int.Parse(values[0]), int.Parse(values[1]), double.Parse(array[2], System.Globalization.CultureInfo.InvariantCulture)));
                         }
